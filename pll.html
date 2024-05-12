@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://mastercubestore.dk/img/cms/solved_rubiks_cube.png">
+    <title>PLL Algs</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="f2l.html">F2L Algs</a></li>
+            <li><a href="oll.html">OLL Algs</a></li>
+            <li><a href="pll.html">PLL Algs</a></li>
+            <li><a href="timer.html">Timer</a></li>
+        </ul>
+    </div>
+    <h1>What is PLL?</h1>
+    <p>PLL (Permute Last Layer) is the final step of the CFOP method for solving the Rubik's cube. Here are algorithms for the PLL step.</p>
+    <h1>Edge Cases</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-1-Ua-Perm.png">
+            <p>Ua Perm</p>
+            <p class="script">M2' U M U2 M' U M2'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-2-Ub-Perm.png">
+            <p>Ub Perm</p>
+            <p class="script">M2' U' M U2' M' U' M2'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-4-Z-Perm.png">
+            <p>Z Perm</p>
+            <p class="script">(M2' U' M2' U') M' (U2 M2' U2) M'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-3-H-Perm.png">
+            <p>H Perm</p>
+            <p class="script">(M2' U M2') U2 (M2' U M2')</p>
+        </div>
+    </div>
+    <h1>Corner Cases</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-5-Aa-Perm.png">
+            <p>Aa Perm</p>
+            <p class="script">x (R' U R') D2 (R U' R') D2 R2 x'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-6-Ab-Perm.png">
+            <p>Ab Perm</p>
+            <p class="script">x R2' D2 (R U R') D2 (R U' R) x'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-3-E-Perm.png">
+            <p>E Perm</p>
+            <p class="script">x' (R U' R' D) (R U R' D') (R U R' D) (R U' R' D') x</p>
+        </div>
+    </div>
+    <h1>Diagonal Corners</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-21-Y-Perm.png">
+            <p>Y Perm</p>
+            <p class="script">F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-20-V-Perm.png">
+            <p>V Perm</p>
+            <p class="script">(R' U R' U') y (R' F' R2 U') (R' U R' F) R F</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-17-Na-Perm.png">
+            <p>Na Perm</p>
+            <p class="script">(R U R' U) (R U R' F') (R U R' U') (R' F R2 U') R' U2 (R U' R')</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-18-Nb-Perm.png">
+            <p>Nb Perm</p>
+            <p class="script">(R' U R U') (R' F' U' F) (R U R' F) R' F' (R U' R)</p>
+        </div>
+    </div>
+    <h1>Adjacent Corners</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-13-Ra-Perm.png">
+            <p>Ra Perm</p>
+            <p class="script">y' (L U2 L' U2) L F' (L' U' L U) L F L2' U</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-14-Rb-Perm.png">
+            <p>Rb Perm</p>
+            <p class="script">(R' U2 R U2') R' F (R U R' U') R' F' R2 U'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-15-Ja-Perm.png">
+            <p>Ja Perm</p>
+            <p class="script">y' (L' U' L F) (L' U' L U) L F' L2' U L U</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-16-Jb-Perm.png">
+            <p>Jb Perm</p>
+            <p class="script">(R U R' F') (R U R' U') R' F R2 U' R' U'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-3-T-Perm.png">
+            <p>T Perm</p>
+            <p class="script">(R U R' U') R' F R2 U' R' U' R U R' F'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-8-F-Perm.png">
+            <p>F Perm</p>
+            <p class="script">(R' U' F') (R U R' U') (R' F R2 U') (R' U' R U) (R' U R)</p>
+        </div>
+    </div>
+    <h1>Edge-Corner Cycles</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-9-Ga-Perm.png">
+            <p>Ga Perm</p>
+            <p class="script">R2 U (R' U R' U') (R U' R2) D U' (R' U R D')</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-10-Gb-Perm.png">
+            <p>Gb Perm</p>
+            <p class="script">y' (R' U' R) U D' R2 U (R' U R U') R U' R2' D</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-11-Gc-Perm.png">
+            <p>Gc Perm</p>
+            <p class="script">y2 L2 U' (L U' L U) (L' U L2 D') (U L U' L') D</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-PLL-12-Gd-Perm.png">
+            <p>Gd Perm</p>
+            <p class="script">y2 (L U L') U' D L2 U' (L U' L' U) L' U L2 D'</p>
+        </div>
+    </div>
+</body>
+</html>

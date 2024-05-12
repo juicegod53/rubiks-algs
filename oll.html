@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://mastercubestore.dk/img/cms/solved_rubiks_cube.png">
+    <title>OLL Algs</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="f2l.html">F2L Algs</a></li>
+            <li><a href="oll.html">OLL Algs</a></li>
+            <li><a href="pll.html">PLL Algs</a></li>
+            <li><a href="timer.html">Timer</a></li>
+        </ul>
+    </div>
+    <h1>What is OLL?</h1>
+    <p>OLL (Orient Last Layer) is the penultimate step of the CFOP method for solving the Rubik's cube. Here are algorithms for the simplified 2 Look OLL step.</p>
+    <h1>Edge Cases</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-EOLL-Line.png">
+            <p>Line</p>
+            <p class="script">F (R U R' U') F'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-EOLL-Small-L.png">
+            <p>Small L</p>
+            <p class="script">f (R U R' U') f'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-EOLL-Dot.png">
+            <p>Dot</p>
+            <p class="script">F (R U R' U') S (R U R' U') f'</p>
+        </div>
+    </div>
+    <h1>Corner Cases</h1>
+    <div class="algs">
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-27-Sune.png">
+            <p>Sune</p>
+            <p class="script">(R U R' U) (R U2 R')</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-26-Antisune.png">
+            <p>Anti Sune</p>
+            <p class="script">(L' U' L U') (L' U2 L)</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-21-H.png">
+            <p>H</p>
+            <p class="script">F (R U R' U') (R U R' U') (R U R' U') F'</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-22-Pi.png">
+            <p>Pi</p>
+            <p class="script">R U2 (R2' U' R2 U') (R2' U2 R)</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-23-Headlights.png">
+            <p>Headlights</p>
+            <p class="script">R2 D (R' U2 R) D' (R' U2 R')</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-24-T.png">
+            <p>T</p>
+            <p class="script">(r U R' U') (r' F R F')</p>
+        </div>
+        <div class="alg border-gradient border-gradient-purple">
+            <img src="https://cubingcheatsheet.com/img/3x3/algorithm-3x3-OLL-25-Bowtie.png">
+            <p>Bowtie</p>
+            <p class="script">F' (r U R' U') (r' F R)</p>
+        </div>
+    </div>
+</body>
+</html>
