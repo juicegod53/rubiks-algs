@@ -86,3 +86,24 @@ window.onload = function () {
     
   
   }
+
+const list = document.querySelector('#times');
+const appendTens = document.getElementById("tens")
+const appendSeconds = document.getElementById("seconds")
+const reset = document.querySelector('#button-reset');
+reset.addEventListener('click', () => {
+  const text = appendSeconds.textContent + ':' + appendTens.textContent;
+  const li = document.createElement('li');
+  const span = document.createElement('span');
+  const listButton = document.createElement('button');
+  span.setAttribute('class','time-list')
+  li.setAttribute('class','time-element')
+  li.appendChild(span);
+  li.appendChild(listButton);
+  span.textContent = text;
+  listButton.textContent = 'Delete';
+  list.appendChild(li)
+  listButton.addEventListener('click', () => {
+    list.removeChild(li);
+  });
+});
